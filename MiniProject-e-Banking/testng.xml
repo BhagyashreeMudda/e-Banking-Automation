@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="eBankingAutomation">
+
+<listeners>
+  <listener class-name="com.eBanking.Utilities.LsitenerReporting"/>
+  </listeners>
+  
+  <test thread-count="5" name="eBanking App Test">
+  
+  
+  
+  <parameter name="browsers" value="Chrome"/>
+  
+    <classes>
+      <class name="com.eBanking.TestCases.TC_LoginTest"/>
+     
+    </classes>
+    
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
